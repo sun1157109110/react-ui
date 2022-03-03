@@ -1,0 +1,49 @@
+.testWrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  padding: 30px;
+  background-color: #1a1a1a;
+}
+
+.testWrap .btnTest div {
+  margin-right: 15px;
+}
+
+.testWrap .btnTest .btn {
+  margin-bottom: 8px;
+}
+.tagContainer{
+  margin-top: 10px;
+}
+
+.progressContainer {
+  position: relative;
+}
+
+.progressContainer::after {
+  content: 'Progress';
+  line-height: 30px;
+  font-size: 16px;
+  color: #1a1a1a;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spinContainer {
+  position:absolute;
+  margin-top: -25px;
+  margin-left: 80px;
+  width: 140px;
+  height: 120px;
+}
+.switchContainer{
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}

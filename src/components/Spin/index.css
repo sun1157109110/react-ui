@@ -1,0 +1,109 @@
+@-webkit-keyframes ballSpinFadeLoad {
+  50% {
+    opacity: 0.3;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes ballSpinFadeLoad {
+  50% {
+    opacity: 0.3;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.loadingWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.loadingWrap .ballSpinFadeLoad {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -5px;
+  margin-left: -5px;
+  transform: translate(-50%, -50%);
+}
+.loadingWrap .ballSpinFadeLoad.line > div {
+  left: 0 !important;
+}
+.loadingWrap .ballSpinFadeLoad > div {
+  background-color: inherit;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: absolute;
+}
+.loadingWrap .ballSpinFadeLoad > div:nth-child(1) {
+  left: 0;
+  top: 25px;
+  -webkit-animation: ballSpinFadeLoad 1s 0s infinite linear;
+  animation: ballSpinFadeLoad 1s 0s infinite linear;
+}
+.loadingWrap .ballSpinFadeLoad > div:nth-child(2) {
+  left: 17.04545px;
+  top: 17.04545px;
+  -webkit-animation: ballSpinFadeLoad 1s 0.12s infinite linear;
+  animation: ballSpinFadeLoad 1s 0.12s infinite linear;
+}
+.loadingWrap .ballSpinFadeLoad > div:nth-child(3) {
+  left: 25px;
+  top: 0px;
+  -webkit-animation: ballSpinFadeLoad 1s 0.24s infinite linear;
+  animation: ballSpinFadeLoad 1s 0.24s infinite linear;
+}
+.loadingWrap .ballSpinFadeLoad > div:nth-child(4) {
+  left: 17.04545px;
+  top: -17.04545px;
+  -webkit-animation: ballSpinFadeLoad 1s 0.36s infinite linear;
+  animation: ballSpinFadeLoad 1s 0.36s infinite linear;
+}
+.loadingWrap .ballSpinFadeLoad > div:nth-child(5) {
+  left: 0px;
+  top: -25px;
+  -webkit-animation: ballSpinFadeLoad 1s 0.48s infinite linear;
+  animation: ballSpinFadeLoad 1s 0.48s infinite linear;
+}
+.loadingWrap .ballSpinFadeLoad > div:nth-child(6) {
+  left: -17.04545px;
+  top: -17.04545px;
+  -webkit-animation: ballSpinFadeLoad 1s 0.6s infinite linear;
+  animation: ballSpinFadeLoad 1s 0.6s infinite linear;
+}
+.loadingWrap .ballSpinFadeLoad > div:nth-child(7) {
+  left: -25px;
+  top: 0;
+  -webkit-animation: ballSpinFadeLoad 1s 0.72s infinite linear;
+  animation: ballSpinFadeLoad 1s 0.72s infinite linear;
+}
+.loadingWrap .ballSpinFadeLoad > div:nth-child(8) {
+  left: -17.04545px;
+  top: 17.04545px;
+  -webkit-animation: ballSpinFadeLoad 1s 0.84s infinite linear;
+  animation: ballSpinFadeLoad 1s 0.84s infinite linear;
+}
+.loadingWrap .loadingText {
+  position: absolute;
+  padding: 5px;
+  font-size: 12px;
+  left: 50%;
+  top: 50%;
+  margin-top: 40px;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,28 @@
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #1890ff;
+}
+::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.dataItem {
+  width: 100%;
+  height: 22px;
+  line-height: 20px;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid #aaa;
+  vertical-align: center;
+}
+.dataItem:hover {
+  background-color: #ddd;
+}

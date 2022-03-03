@@ -1,0 +1,68 @@
+.btn {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 6px 1em;
+  line-height: 1.4999em;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  color: #fff;
+  font-family: inherit;
+  background-color: #000;
+  user-select: none;
+  cursor: pointer;
+  text-align: center;
+}
+.btn.primary {
+  background-color: #09f;
+}
+.btn.danger {
+  background-color: #ff4d4f;
+}
+.btn.warning {
+  background-color: #F90;
+}
+.btn.info {
+  background-color: #C03;
+}
+.btn.pure {
+  border: 1px solid #ccc;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #fff;
+}
+.btn.confirm{
+  background-color: #52c41a;
+}
+.btn.pure::after {
+  background-image: radial-gradient(circle, #ccc 10%, transparent 11%);
+}
+.btn.circle {
+  border-radius: 1.5em;
+}
+.btn.block {
+  display: block;
+}
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+.ripple::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #fff 10%, transparent 11%);
+  background-repeat: none;
+  background-position: 50%;
+  transform: scale(12, 12);
+  opacity: 0;
+  transition: transform 0.6s cubic-bezier(0.75, 0.23, 0.43, 0.82), opacity 0.6s;
+}
+.ripple:active::after {
+  transform: scale(0, 0);
+  opacity: 3;
+  transition: 0s;
+}

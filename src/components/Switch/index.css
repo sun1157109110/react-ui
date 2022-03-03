@@ -1,0 +1,53 @@
+.switchWrap {
+  display: inline-block;
+  vertical-align: top;
+}
+.switchWrap .switchInner {
+  width: 48px;
+  height: 24px;
+  border-radius: 24px;
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  color: #fff;
+  background-color: #ccc;
+  box-shadow: 0 0 1px #36a6d4;
+  user-select: none;
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
+.switchWrap .switchInner:hover {
+  box-shadow: none;
+}
+.switchWrap .switchInner:active {
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+.switchWrap .switchInner:active .switchDot {
+  width: 60%;
+}
+.switchWrap .switchInner > input {
+  width: 0;
+  height: 0;
+  display: none;
+}
+.switchWrap .switchInner > input:checked + span {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+.switchDot {
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  border-radius: 46px;
+  width: 46%;
+  height: 92%;
+  background-color: #fff !important;
+  box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+  transition: all linear 0.2s;
+}
+.offText {
+  line-height: 2;
+  float: right;
+  margin-right: 5px;
+}

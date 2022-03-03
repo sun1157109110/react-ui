@@ -1,0 +1,5 @@
+/* 选中的样式 */
+.selected {
+    background-color: #00bfff;
+    color: #ccc;
+}
